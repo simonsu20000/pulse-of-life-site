@@ -1,0 +1,61 @@
+baseURL = "https://pulseoflifekindergarten.com/"
+languageCode = "en-us"
+title = "Pulse Of Life Kindergarten"
+theme = "PaperMod"
+
+# Output formats
+outputs = { home = ["HTML", "JSON"] }
+
+# Pagination
+[pagination]
+  pagerSize = 10
+
+# Markup settings
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+
+# Menu items
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 10
+
+[[menu.main]]
+  name = "Our Community"
+  url = "/community/"
+  weight = 20
+
+[[menu.main]]
+  name = "Our Montessori Approach"
+  url = "/montessori/"
+  weight = 30
+
+[[menu.main]]
+  name = "Contact"
+  url = "/contact/"
+  weight = 40
+
+# Site parameters
+[params]
+  env = "production"
+  title = "Pulse Of Life Kindergarten"
+  description = "Quality education for Syrian children affected by displacement. Providing inclusive, Montessori-based education in Dara'a, Syria."
+  keywords = ["kindergarten", "pulse of life", "education", "Syria", "displaced children", "Montessori"]
+  author = "Pulse Of Life Kindergarten"
+
+  # Theme settings
+  defaultTheme = "auto"
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  ShowToc = false
+  TocOpen = false
+  ShowShareButtons = false
+
+  # Social media (optional)
+  [params.social]
+    email = "pulseoflifekindergarten@gmail.com"
+    github = ""
+    linkedin = ""
+    twitter = ""
