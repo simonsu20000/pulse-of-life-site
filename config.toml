@@ -36,6 +36,11 @@ outputs = { home = ["HTML", "JSON"] }
   url = "/contact/"
   weight = 40
 
+[[menu.main]]
+  name = "Donate"
+  url = "/donate/"
+  weight = 50
+
 # Site parameters
 [params]
   env = "production"
@@ -52,6 +57,16 @@ outputs = { home = ["HTML", "JSON"] }
   ShowToc = false
   TocOpen = false
   ShowShareButtons = false
+
+  # CharityStack donation platform (script tag is loaded in layouts/partials/charitystack.html)
+  #   hostedURL      -> CharityStack hosted donation page. Used by every Donate button today.
+  #   formID         -> once CharityStack authorizes pulseoflifekindergarten.org for the overlay,
+  #                     set this to the form ID and every Donate button opens the in-page overlay instead.
+  #   embedElementID -> optional: element ID (E_xxxxxxxx) to embed a form inline on /donate/.
+  [params.charitystack]
+    hostedURL = "https://charitystack.com/donate/7435cf84-4dc5-491e-9c89-0ac41ab52739"
+    formID = ""
+    embedElementID = ""
 
   # Social media (optional)
   [params.social]

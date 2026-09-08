@@ -1,0 +1,8 @@
+{{- /* Returns the href (+ target attrs) for a Donate link, in priority: overlay formID > hosted page > /donate/ */ -}}
+{{- $cs := .Site.Params.charitystack -}}
+{{- $form := "" -}}{{- $hosted := "" -}}
+{{- with $cs }}{{ $form = .formID | default "" }}{{ $hosted = .hostedURL | default "" }}{{ end -}}
+{{- if $form -}}href="?donate&formid={{ $form }}"
+{{- else if $hosted -}}href="{{ $hosted }}" target="_blank" rel="noopener"
+{{- else -}}href="/donate/#donate-form"
+{{- end -}}

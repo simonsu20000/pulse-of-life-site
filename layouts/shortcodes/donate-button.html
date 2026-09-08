@@ -1,0 +1,3 @@
+{{- /* Inline Donate button; uses the same priority as the rest of the site */ -}}
+{{- $label := .Get "label" | default "Donate" -}}
+<a {{ partial "donate-href.html" . | safeHTMLAttr }} class="cta-button">{{ $label }}</a>

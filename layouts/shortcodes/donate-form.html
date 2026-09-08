@@ -1,0 +1,18 @@
+{{- /* Donation section on /donate/. Priority: embedElementID (inline form) > formID (overlay) > hostedURL (secure hosted page) */ -}}
+{{- $cs := .Site.Params.charitystack -}}
+{{- $embed := "" -}}{{- $form := "" -}}{{- $hosted := "" -}}
+{{- with $cs }}{{ $embed = .embedElementID | default "" }}{{ $form = .formID | default "" }}{{ $hosted = .hostedURL | default "" }}{{ end -}}
+<div class="donate-form-wrap" id="donate-form">
+{{- if $embed }}
+  <div id="{{ $embed }}" data-entity="EMBED_FORM" data-source="CharityStack"></div>
+{{- else if $form }}
+  <p class="donate-form-lead">Give securely online — one-time or monthly. Choose an amount on the next screen.</p>
+  <a href="?donate&formid={{ $form }}" class="cta-button donate-now">Donate now</a>
+{{- else if $hosted }}
+  <p class="donate-form-lead">Give securely online — one-time or monthly. You'll be taken to our secure giving page.</p>
+  <a href="{{ $hosted }}" target="_blank" rel="noopener" class="cta-button donate-now">Donate now →</a>
+  <p class="donate-form-note">Donations are processed by our fiscal sponsor, AMENDS Global Fellows Foundation, through CharityStack.</p>
+{{- else }}
+  <p class="donate-form-lead">Our secure online giving form is being set up. In the meantime, please email <a href="mailto:pulseoflifekindergarten@gmail.com">pulseoflifekindergarten@gmail.com</a> and we will send you donation details directly.</p>
+{{- end }}
+</div>

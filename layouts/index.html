@@ -590,6 +590,7 @@ a { color: inherit; }
   .fine { flex-direction: column; gap: 12px; align-items: flex-start; }
 }
 </style>
+{{ partial "charitystack.html" . }}
 </head>
 <body>
 
@@ -602,7 +603,7 @@ a { color: inherit; }
       <a href="#story">Our Story</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a href="#support" class="btn btn-outline">Support us <span class="arrow">→</span></a>
+    <a {{ partial "donate-href.html" . | safeHTMLAttr }} class="btn btn-outline">Donate <span class="arrow">→</span></a>
   </div>
 </header>
 
@@ -620,7 +621,7 @@ a { color: inherit; }
         Pulse of Life is an inclusive, Montessori-based kindergarten for Syrian children whose lives have been shaped by displacement. We meet them with safety, with structure, and with the unhurried respect they deserve.
       </p>
       <div class="hero-cta">
-        <a href="#support" class="btn btn-primary">Support our work <span class="arrow">→</span></a>
+        <a {{ partial "donate-href.html" . | safeHTMLAttr }} class="btn btn-primary">Support our work <span class="arrow">→</span></a>
         <a href="#story" class="btn btn-outline">Read our story</a>
       </div>
     </div>
@@ -790,7 +791,7 @@ a { color: inherit; }
         <h2 class="serif">Children learn best when they are <em>trusted to lead.</em></h2>
         <p>Maria Montessori observed something simple a century ago: when children are given freedom inside a careful environment, they don't run wild — they concentrate. They choose work. They finish it. They become themselves.</p>
         <p>This is the method we follow, adapted for the children we serve.</p>
-        <a href="#" class="btn btn-primary">Explore our approach <span class="arrow">→</span></a>
+        <a href="/montessori/" class="btn btn-primary">Explore our approach <span class="arrow">→</span></a>
       </div>
       <div class="method-img">
         <img src="https://static.wixstatic.com/media/60af18_f57f17ac549641edb4b653934e959ce8~mv2.jpeg" alt="Children engaged in independent work">
@@ -806,8 +807,8 @@ a { color: inherit; }
     <h2 class="serif">A child's day costs <em>less than a coffee.</em><br>A year of school changes everything.</h2>
     <p>We're a small school sustained by people who believe Syrian children deserve more than survival. Partner with us — as a sponsor, a volunteer, or a friend who shares our work.</p>
     <div class="cta-row">
-      <a href="#" class="btn btn-primary">Become a sponsor <span class="arrow">→</span></a>
-      <a href="#contact" class="btn btn-outline">Get in touch</a>
+      <a {{ partial "donate-href.html" . | safeHTMLAttr }} class="btn btn-primary">Donate now <span class="arrow">→</span></a>
+      <a href="/donate/#sponsor" class="btn btn-outline">Become a sponsor</a>
     </div>
   </div>
 </section>
@@ -830,9 +831,9 @@ a { color: inherit; }
     <div>
       <h4>Support</h4>
       <ul>
-        <li><a href="#">Donate</a></li>
-        <li><a href="#">Sponsor a child</a></li>
-        <li><a href="#">Volunteer</a></li>
+        <li><a href="/donate/">Donate</a></li>
+        <li><a href="/donate/#sponsor">Sponsor a child</a></li>
+        <li><a href="/contact/">Volunteer</a></li>
       </ul>
     </div>
     <div>
