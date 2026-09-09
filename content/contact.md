@@ -2,18 +2,16 @@
 title: "Contact"
 description: "Get in touch with Pulse of Life Kindergarten."
 url: "/contact/"
+hero_title: "Get In Touch"
+eyebrow: "Contact"
+hero_image: "https://static.wixstatic.com/media/60af18_a0ed71ef45e24631ac20352401478860~mv2.jpeg"
+page_cta: false
 ---
-
-<div class="hero-section" style="background-image: url('https://static.wixstatic.com/media/60af18_a0ed71ef45e24631ac20352401478860~mv2.jpeg'); background-size: cover; background-position: center;">
-  <div class="hero-overlay"></div>
-  <h2>Get In Touch</h2>
-  <p>We'd love to hear from you. Reach out to learn more about our programs or get involved.</p>
-</div>
 
 <div class="features-grid">
   <div class="feature-card">
     <h3>Email Us</h3>
-    <p><a href="mailto:pulseoflifekindergarten@gmail.com">pulseoflifekindergarten@gmail.com</a></p>
+    <p><a href="mailto:info@pulseoflifekindergarten.org">info@pulseoflifekindergarten.org</a></p>
   </div>
   <div class="feature-card">
     <h3>Our Location</h3>
@@ -29,23 +27,12 @@ url: "/contact/"
 
 ### Send Us a Message
 
-<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-  <p>
-    <label>Name *<br>
-    <input type="text" name="name" required></label>
-  </p>
-  <p>
-    <label>Email *<br>
-    <input type="email" name="email" required></label>
-  </p>
-  <p>
-    <label>Message *<br>
-    <textarea name="message" required rows="5"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send Message</button>
-  </p>
-</form>
+The quickest way to reach us is by email. Tell us a little about who you are and how you'd like to be involved, and we'll reply within a day or two.
+
+<div class="contact-actions">
+  <a href="mailto:info@pulseoflifekindergarten.org?subject=Hello%20from%20the%20Pulse%20of%20Life%20website" class="cta-button">Email us →</a>
+  <a href="/donate/" class="btn btn-outline">Support our work</a>
+</div>
 
 ---
 

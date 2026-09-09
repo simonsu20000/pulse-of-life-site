@@ -1,15 +1,13 @@
 ---
 title: "Donate"
-description: "Support Pulse of Life Kindergarten — quality, inclusive education for Syrian children affected by displacement."
+description: "A child's day at school costs less than a coffee. A year of school changes everything."
 url: "/donate/"
+hero_title: "Support Our Mission"
+eyebrow: "Stand with us"
+hero_image: "https://static.wixstatic.com/media/60af18_f57f17ac549641edb4b653934e959ce8~mv2.jpeg"
+hero_donate: true
+page_cta: false
 ---
-
-<div class="hero-section" style="background-image: url('https://static.wixstatic.com/media/60af18_f57f17ac549641edb4b653934e959ce8~mv2.jpeg'); background-size: cover; background-position: center;">
-  <div class="hero-overlay"></div>
-  <h2>Support Our Mission</h2>
-  <p>A child's day at school costs less than a coffee. A year of school changes everything.</p>
-  {{< donate-button label="Donate Now" >}}
-</div>
 
 ### Why Your Gift Matters
 
@@ -64,8 +62,8 @@ Give securely online through our donation partner. One-time and monthly gifts ar
 
 ### Questions About Giving?
 
-We're happy to talk about how your gift will be used, or to arrange a different way of giving. Email us at <a href="mailto:pulseoflifekindergarten@gmail.com">pulseoflifekindergarten@gmail.com</a> and we will get back to you within 24–48 hours.
+We're happy to talk about how your gift will be used, or to arrange a different way of giving. Email us at <a href="mailto:info@pulseoflifekindergarten.org">info@pulseoflifekindergarten.org</a> and we will get back to you within 24–48 hours.
 
-<div style="text-align:center; padding: 1rem 0;">
+<div class="center">
   {{< donate-button label="Donate Now" >}}
 </div>

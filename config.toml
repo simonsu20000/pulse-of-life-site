@@ -1,10 +1,11 @@
-baseURL = "https://pulseoflifekindergarten.com/"
+baseURL = "https://pulseoflifekindergarten.org/"
 languageCode = "en-us"
 title = "Pulse Of Life Kindergarten"
 theme = "PaperMod"
 
 # Output formats
-outputs = { home = ["HTML", "JSON"] }
+outputs = { home = ["HTML"] }
+disableKinds = ["taxonomy", "term", "RSS"]
 
 # Pagination
 [pagination]
@@ -15,20 +16,20 @@ outputs = { home = ["HTML", "JSON"] }
   [markup.goldmark.renderer]
     unsafe = true
 
-# Menu items
-[[menu.main]]
-  name = "Home"
-  url = "/"
-  weight = 10
-
+# Menu items (header nav; the Donate button is rendered separately)
 [[menu.main]]
   name = "Our Community"
   url = "/community/"
+  weight = 10
+
+[[menu.main]]
+  name = "Montessori Method"
+  url = "/montessori/"
   weight = 20
 
 [[menu.main]]
-  name = "Our Montessori Approach"
-  url = "/montessori/"
+  name = "Our Story"
+  url = "/#story"
   weight = 30
 
 [[menu.main]]
@@ -36,13 +37,9 @@ outputs = { home = ["HTML", "JSON"] }
   url = "/contact/"
   weight = 40
 
-[[menu.main]]
-  name = "Donate"
-  url = "/donate/"
-  weight = 50
-
 # Site parameters
 [params]
+  contactEmail = "info@pulseoflifekindergarten.org"
   env = "production"
   title = "Pulse Of Life Kindergarten"
   description = "Quality education for Syrian children affected by displacement. Providing inclusive, Montessori-based education in Dara'a, Syria."

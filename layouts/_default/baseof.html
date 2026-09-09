@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#faf5ec">
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+{{ with .Params.hero_image }}<meta property="og:image" content="{{ . }}">{{ end }}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..800,30..100&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ "css/site.css" | relURL }}?v={{ now.Unix }}">
+{{ partial "charitystack.html" . }}
+</head>
+<body>
+{{ partial "site-header.html" . }}
+{{ block "main" . }}{{ end }}
+{{ partial "site-footer.html" . }}
+<script>
+(function(){var h=document.querySelector('.site-header'),b=document.querySelector('.nav-toggle');if(!h||!b)return;b.addEventListener('click',function(){var o=h.classList.toggle('menu-open');b.setAttribute('aria-expanded',o?'true':'false');});document.querySelectorAll('.nav a').forEach(function(a){a.addEventListener('click',function(){h.classList.remove('menu-open');});});})();
+</script>
+</body>
+</html>

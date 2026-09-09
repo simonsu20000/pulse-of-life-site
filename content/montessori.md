@@ -2,13 +2,13 @@
 title: "Our Montessori Approach"
 description: "Child-centered learning that nurtures independence and curiosity."
 url: "/montessori/"
+hero_title: "The Montessori Method"
+eyebrow: "Our approach"
+hero_image: "https://static.wixstatic.com/media/60af18_061a1097fccf44dca3e653564a5bb977~mv2.jpeg"
+cta_eyebrow: "Learn more"
+cta_title: "Questions about <em>how we teach?</em>"
+cta_text: "We're glad to talk with parents, educators and partners about our adapted Montessori program."
 ---
-
-<div class="hero-section" style="background-image: url('https://static.wixstatic.com/media/60af18_061a1097fccf44dca3e653564a5bb977~mv2.jpeg'); background-size: cover; background-position: center;">
-  <div class="hero-overlay"></div>
-  <h2>The Montessori Method</h2>
-  <p>Child-centered learning that nurtures independence and curiosity.</p>
-</div>
 
 ### What is Montessori Education?
 
@@ -80,7 +80,3 @@ The Montessori method offers unique benefits for children who have experienced d
 ### Our Adapted Approach
 
 While staying true to Montessori principles, we have thoughtfully adapted our program to meet the specific needs of our community. Our teachers receive specialized training in trauma-informed practices, ensuring that every interaction supports healing and growth alongside academic development.
-
-<div style="text-align:center; padding: 2rem 0;">
-  <a href="/contact/" class="cta-button">Contact Us to Learn More</a>
-</div>

@@ -1,0 +1,15 @@
+{{- $p := . -}}
+<header class="site-header">
+  <div class="wrap">
+    <a href="/" class="brand"><span class="dot"></span>Pulse of Life</a>
+    <nav class="nav" id="site-nav">
+      {{- range .Site.Menus.main }}
+      <a href="{{ .URL }}"{{ if and (not $p.IsHome) (eq $p.RelPermalink .URL) }} class="active"{{ end }}>{{ .Name }}</a>
+      {{- end }}
+    </nav>
+    <div class="header-right">
+      <a {{ partial "donate-href.html" . | safeHTMLAttr }} class="btn btn-outline">Donate <span class="arrow">→</span></a>
+      <button class="nav-toggle" aria-label="Menu" aria-controls="site-nav" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>

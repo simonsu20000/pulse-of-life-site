@@ -1,0 +1,33 @@
+{{ define "main" }}
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-bg" style="background-image: url('{{ .Params.hero_image | default "https://static.wixstatic.com/media/60af18_f57f17ac549641edb4b653934e959ce8~mv2.jpeg" }}');"></div>
+    <div class="page-hero-content">
+      {{ with .Params.eyebrow }}<div class="eyebrow"><span class="line"></span> {{ . }}</div>{{ end }}
+      <h1 class="serif">{{ .Params.hero_title | default .Title | safeHTML }}</h1>
+      {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+      {{ if .Params.hero_donate }}<div class="hero-cta"><a {{ partial "donate-href.html" . | safeHTMLAttr }} class="btn btn-primary">Donate now <span class="arrow">→</span></a></div>{{ end }}
+    </div>
+  </div>
+</section>
+
+<article class="page-body">
+  <div class="prose">
+    {{ .Content }}
+  </div>
+</article>
+
+{{ if ne .Params.page_cta false }}
+<section class="page-cta">
+  <div class="wrap">
+    <div class="eyebrow" style="color: var(--terracotta); justify-content: center;"><span class="line" style="background: var(--terracotta); opacity: .6;"></span> {{ .Params.cta_eyebrow | default "Stand with us" }} <span class="line" style="background: var(--terracotta); opacity: .6;"></span></div>
+    <h2>{{ .Params.cta_title | default "A child's day costs <em>less than a coffee.</em>" | safeHTML }}</h2>
+    <p>{{ .Params.cta_text | default "We're a small school sustained by people who believe Syrian children deserve more than survival." }}</p>
+    <div class="cta-row">
+      <a {{ partial "donate-href.html" . | safeHTMLAttr }} class="btn btn-primary">Donate now <span class="arrow">→</span></a>
+      <a href="{{ .Params.cta_secondary_url | default "/contact/" }}" class="btn btn-outline">{{ .Params.cta_secondary | default "Get in touch" }}</a>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
