@@ -36,6 +36,8 @@ Give securely online through our donation partner. One-time and monthly gifts ar
 
 {{< donate-form >}}
 
+Pulse of Life Kindergarten is a fiscally sponsored project of the AMENDS Global Fellows Foundation, a registered 501(c)(3) tax-exempt organization (EIN: 82-4195739). All charitable donations and contributions made to Pulse of Life Kindergarten are tax-deductible to the full extent permitted by law.
+
 ---
 
 ### Other Ways to Give
