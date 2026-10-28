@@ -24,12 +24,10 @@ The method recognizes that children learn best when they are actively engaged an
 
 <div class="icon-features">
   <div class="icon-feature">
-    <img src="https://static.wixstatic.com/media/60af18_32ec09d810bd4bd280131dceadb67df1~mv2.png/v1/fill/w_104,h_104,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/60af18_32ec09d810bd4bd280131dceadb67df1~mv2.png" alt="Child-Centered Learning" class="principle-icon-img">
     <h3>Child-Centered Learning</h3>
     <p>Each child learns at their own pace, guided by their natural curiosity and interests, with teachers serving as facilitators rather than lecturers.</p>
   </div>
   <div class="icon-feature">
-    <img src="https://static.wixstatic.com/media/60af18_8d04baa581b0494ea69f14fe99474f7b~mv2.png/v1/fill/w_104,h_104,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/60af18_8d04baa581b0494ea69f14fe99474f7b~mv2.png" alt="Prepared Environment" class="principle-icon-img">
     <h3>Prepared Environment</h3>
     <p>Our classrooms are carefully designed with age-appropriate materials that invite exploration and discovery, creating spaces where learning happens naturally.</p>
   </div>
